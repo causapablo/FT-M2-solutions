@@ -14,13 +14,19 @@ function App() {
           min={Cairns.main.temp_min}
           name={Cairns.name}
           img={Cairns.weather[0].icon}
+          key = {Cairns.id}
           onClose={() => alert(Cairns.name)}
+          
+          /* Notar que los nombres de atributos corresponden a los nombres de las propiedades del props que usamos 
+          para estructurar la CARD. Nombre ATRIBUTOS = PROPIEDADES del props */
         />
       </div>
       <hr />
       <div>
         <Cards
           cities={data}
+          /* Notar que lo que va a recibir aca es un array, pero otra vez ATRIBUTOS = PROPIEDADES */
+          /* data es un archivo data.js que va a exportar un arreglo con ciudades. */
         />
       </div>
       <hr />

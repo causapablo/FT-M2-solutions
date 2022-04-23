@@ -13,6 +13,7 @@ export default function Cards(props) {
         name = {c.name}
         img = {c.weather[0].icon}
         onClose = {() => alert(c.name)}
+        key = {c.id}
       />
     ))}
   </div>

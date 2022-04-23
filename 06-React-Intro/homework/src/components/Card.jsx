@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function Card(props) {
   // acá va tu código
+  //A las propiedades se las obtiene del App.js. Ahi estan instanciados los componentes con sus propiedades. Cada atributo corresponde a una propiedad del props.
+  //Por eso usamos props.onClose, props.name, props.min, props.max y props.img.
   return( 
   <div>
     <button onClick = {props.onClose}>X</button>
