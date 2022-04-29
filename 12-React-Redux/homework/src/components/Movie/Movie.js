@@ -16,12 +16,12 @@ class Movie extends React.Component {
         return (
             <div className="movie-detail">
                 Detalle de la pelicula  
-                <h2>{`Título: ${this.props.movies.Title}`}</h2>
-                <img src={this.props.movies.Poster} alt="Img not found"/>
-                <h4>{`Año: ${this.props.movies.Year}`}</h4>
-                <h4>{`Duración: ${this.props.movies.Runtime}`}</h4>
-                <h4>{`Elenco: ${this.props.movies.Actors}`}</h4>
-                <h4>{`Director: ${this.props.movies.Director}`}</h4>
+                <h2>{`Título: ${this.props.movie.Title}`}</h2>
+                <img src={this.props.movie.Poster} alt="Img not found"/>
+                <h4>{`Año: ${this.props.movie.Year}`}</h4>
+                <h4>{`Duración: ${this.props.movie.Runtime}`}</h4>
+                <h4>{`Elenco: ${this.props.movie.Actors}`}</h4>
+                <h4>{`Director: ${this.props.movie.Director}`}</h4>
             </div>
         );
     }
@@ -29,7 +29,7 @@ class Movie extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        movies: state.movieDetail
+        movie: state.movieDetail
     }
 }
 function mapDispatchToProps(dispatch){

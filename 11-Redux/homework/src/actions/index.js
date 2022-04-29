@@ -1,5 +1,6 @@
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
+export const DOUBLE = 'DOUBLE';
 
 
 
@@ -22,3 +23,8 @@ export const decrement = () => {
   }
 };
 
+export const double = () =>{
+  return{
+    type: DOUBLE
+  }
+}
